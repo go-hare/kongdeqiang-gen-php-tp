@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "v2";
+
+package app.mobile.v1;
+
+message empty {
+
+}
+
+// blog service is a blog demo
+service BlogService {
+    rpc GetArticles(empty) returns (empty) {
+
+    }
+
+    rpc CreateArticle(empty) returns (empty) {
+
+    }
+}
